@@ -1,3 +1,9 @@
-<p>
-  hello works!
+<p *ngIf="greeting; else showGreeting">
+  {{greeting}}
 </p>
+
+<ng-template #showGreeting>
+	<p>Enter a greeting</p>
+</ng-template>
+
+<input type="text" [(ngModel)]="greeting" (keyup)="log($event)">

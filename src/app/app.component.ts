@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     title = "Gary's App";
 
-    sayHellp() {
+    sayHello() {
         alert('Hello, World');
     }
 }
